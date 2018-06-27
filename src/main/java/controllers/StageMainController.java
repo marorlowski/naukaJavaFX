@@ -1,8 +1,8 @@
 package controllers;
 
 import javafx.fxml.FXML;
+import javafx.event.*;
 import javafx.scene.control.Button;
-
 
 public class StageMainController {
 
@@ -16,6 +16,15 @@ public class StageMainController {
     //Inicjalizacja FXML
     @FXML
     void initialize(){
-        gen.setText("aaaaaaaaaaaa");
+        gen.setText("Generuj Raport");
     }
+
+    @FXML
+
+    public void onActionGen(ActionEvent e){
+        e.getSource();
+        System.out.println("onActionGen START ");
+
+    }
+
 }
