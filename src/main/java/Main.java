@@ -39,6 +39,9 @@ public class Main extends Application {
         //Style sceny
         primaryStage.initStyle(StageStyle.DECORATED);
 
+        //Parametr nieprzezroczystości
+        primaryStage.setOpacity(0.7);
+
         primaryStage.setTitle("JavaFX");
         primaryStage.show();
     }
