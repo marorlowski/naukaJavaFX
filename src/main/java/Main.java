@@ -1,3 +1,4 @@
+import controllers.StageMainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -17,6 +18,9 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(this.getClass().getResource("/fxml/StageMain.fxml"));
         StackPane stackPane = loader.load();
+
+        //odwołanie się do kontrolera
+//        StageMainController controller = loader.getController();
 
         Scene scene = new Scene(stackPane);
 
